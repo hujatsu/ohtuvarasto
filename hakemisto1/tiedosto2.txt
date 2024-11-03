@@ -1,3 +1,0 @@
-Jatketaan "git add -p" testailua myös tässä tiedostossa!
-sisältöä hakemistossa
-Tuossa välissä on jotain vanhaa kamaa. Katsotaan miten se toimii, hunkien lisäämisen kanssa.

@@ -1,5 +1,0 @@
-Testaillaan hieman "git add" -komennon toista versiota "git add -p". Olkoon tämä kappale nyt ensimmäinen "hunk".
-
-Tehdään tähän tiedostoon vielä muutama uusi "hunk", jotka lisätään erikseen. Olkoon tämä hunk2.
-
-... Ja tämä hunk3.

@@ -85,5 +85,9 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_str_esitys(self):
-        # tyhjän varaston string-esitys
-        self.assertEqual(str(self.varasto), "saldo = 0, vielä tilaa 10")
+        # Alustetaan tyhjä varasto
+        ALKU_SALDO = 0
+        TILAVUUS = 10
+        self.varasto = Varasto(TILAVUUS, ALKU_SALDO)
+        # tyhjän varaston odotettu string-esitys:
+        self.assertEqual(str(self.varasto), f"saldo = {ALKU_SALDO}, vielä tilaa {TILAVUUS}")

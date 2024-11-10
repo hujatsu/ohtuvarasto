@@ -29,22 +29,7 @@ class Varasto:
         else:
             self.saldo = self.tilavuus
 
-    # too-many-statements
-    def ota_varastosta(self, maara, extra_arg1, extra_arg2): # too-many-positional-arguments ja line-too-long
-        # too-many-nested-blocks (R1702)
-        if isinstance(extra_arg1, int):
-            print(extra_arg1 > self.saldo)
-            if isinstance(extra_arg2, int):
-                print(extra_arg2 > self.saldo)
-                if extra_arg1 + extra_arg2 > 10:
-                    print("ylimääräiset argumentit ovat numeroita joiden summa on yli 10.")
-
-        if isinstance(extra_arg1, str):
-            print(extra_arg1.capitalize())
-
-        if isinstance(extra_arg2, str):
-            print(extra_arg2.capitalize())
-
+    def ota_varastosta(self, maara):
         if maara < 0:
             return 0.0
         if maara > self.saldo:

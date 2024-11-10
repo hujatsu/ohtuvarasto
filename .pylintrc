@@ -20,5 +20,6 @@ disable=raw-checker-failed,
 max-line-length=80
 
 [REFACTORING]
+max-nested-blocks=2
 
 [DESIGN]

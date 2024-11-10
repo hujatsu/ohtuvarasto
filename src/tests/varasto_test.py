@@ -90,4 +90,5 @@ class TestVarasto(unittest.TestCase):
         TILAVUUS = 10
         self.varasto = Varasto(TILAVUUS, ALKU_SALDO)
         # tyhjän varaston odotettu string-esitys:
-        self.assertEqual(str(self.varasto), f"saldo = {ALKU_SALDO}, vielä tilaa {TILAVUUS}")
+        self.assertEqual(str(self.varasto),
+                         f"saldo = {ALKU_SALDO}, vielä tilaa {TILAVUUS}")
